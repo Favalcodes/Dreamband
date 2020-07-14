@@ -8,6 +8,7 @@
     font-family: Muli;
 font-style: normal;
 font-weight: normal;
+font-size: 18px;
 padding-right: 80px;
 }
 .skew-bg{
@@ -15,13 +16,14 @@ padding-right: 80px;
     left: 260px;
     width: 200px;
     height: 0;
-    border-top: 1000px solid #760000;
+    border-top: 700px solid #760000;
     border-left: 1000px solid transparent;
 }
 a{
     color: #fff;
 }
 .sleep-img{
+    margin-top: 100px;
     background: url(../images/undraw_sleep_analysis_o5f9\ 1.svg) no-repeat;
     background-size: cover;
     position: absolute;
@@ -36,6 +38,29 @@ a{
     font-size: 18px;
     width: 500px;
 }
+h2{
+    line-height: 60px;
+}
 span{
     color: #fff;
+}
+.subscribe{
+    margin-top: 120px;
+}
+#email{
+    border: 1px solid #193D5D;
+    border-radius: 60px;
+    background: transparent;
+    padding: 5px 25px;
+    width: 330px;
+}
+.sub-btn{
+    margin-top: 40px;
+    width: 330px;
+    text-align: center;
+    background-color: #F9A826;
+    border-radius: 60px;
+    border: 1px solid #F9A826;
+    font-weight: 600;
+    padding: 6px 0;
 }
