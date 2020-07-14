@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar-nav{
+    font-family: Muli;
+font-style: normal;
+font-weight: normal;
+padding-right: 80px;
+}
+.skew-bg{
+    position: absolute;
+    left: 260px;
+    width: 200px;
+    height: 0;
+    border-top: 1000px solid #760000;
+    border-left: 1000px solid transparent;
+}
+a{
+    color: #fff;
+}
