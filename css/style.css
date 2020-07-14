@@ -21,3 +21,21 @@ padding-right: 80px;
 a{
     color: #fff;
 }
+.sleep-img{
+    background: url(../images/undraw_sleep_analysis_o5f9\ 1.svg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    padding-left: 40px;
+    width: 600px;
+    height: 500px;
+}
+.text{
+    position: relative;
+    top: 85px;
+    margin-left: 460px;
+    font-size: 18px;
+    width: 500px;
+}
+span{
+    color: #fff;
+}
