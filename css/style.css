@@ -14,7 +14,7 @@ padding-right: 80px;
 .skew-bg{
     position: absolute;
     left: 260px;
-    width: 200px;
+    width: 0;
     height: 0;
     border-top: 700px solid #760000;
     border-left: 1000px solid transparent;
@@ -35,7 +35,7 @@ a{
     position: relative;
     top: 85px;
     margin-left: 460px;
-    font-size: 18px;
+    font-size: 24px;
     width: 500px;
 }
 h2{
@@ -63,4 +63,146 @@ span{
     border: 1px solid #F9A826;
     font-weight: 600;
     padding: 6px 0;
+}
+.device{
+    margin-top: 100px;
+}
+.device-img{
+    margin-left: 900px;
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.device-img2{
+    top: 1200px;
+    left: 220px;
+    position: absolute;
+    z-index: -1;
+}
+.device-text{
+    padding-top: 140px;
+    position: relative;
+}
+.device h2{
+    text-align: center;
+}
+.device-text .p1{
+    position: relative;
+    margin-top: 230px;
+    text-align: left;
+    margin-left: 50%;
+    width: 581px;
+    font-size: 24px;
+}
+.device-text .p2{
+    position: relative;
+    text-align: left;
+    margin-left: 50%;
+    width: 581px;
+    font-size: 24px;
+}
+.left-triangle{
+    top: 1300px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 800px solid transparent;
+    border-left: 900px solid #760000;
+    z-index: -1;
+}
+.device-img3{
+    margin-top: 23px;
+    margin-left: 50px;
+}
+.pattern{
+    margin-top: 60px;
+}
+.pattern h2{
+    text-align: center;
+}
+.pattern-img{
+    margin-left: 900px;
+    position: absolute;
+}
+.pattern-text{
+    width: 500px;
+    margin-left: 70px;
+    margin-top: 170px;
+    font-size: 24px;
+    justify-content: center;
+    position: relative;
+}
+.pattern-img2{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+.pattern-img3{
+    position: absolute;
+    left: 700px;
+    top: 2896px;
+}
+.skew-bg2{
+    position: absolute;
+    top: 3090px;
+    left: 460px;
+    width: 0;
+    height: 0;
+    border-top: 500px solid #760000;
+    border-left: 800px solid transparent;
+}
+.hub h2{
+    text-align: center;
+}
+.hub-text{
+    margin-top: 90px;
+}
+.hub-text p{
+    padding-left: 70px;
+    font-size: 24px;
+    width: 600px;
+}
+.hub-img{
+    width: 400px;
+    height: 400px;
+}
+.hub-img2{
+    width: 400px;
+    height: 400px;
+    margin: 10px 200px;
+}
+.sleep h2{
+    text-align: center;
+}
+.sleep-img2{
+    position: absolute;
+    left: 750px;
+}
+.sleep-text{
+    margin-top: 250px;
+}
+.sleep-text p{
+    width: 750px;
+    padding-left: 250px;
+    font-size: 24px;
+}
+.left-triangle2{
+    top: 4600px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 400px solid transparent;
+    border-left: 700px solid #760000;
+    z-index: -1;
+}
+.sleep-img3{
+    top: 50px;
+    width: 550px;
+    margin-left: 470px;
+}
+.screen h2{
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
 }
