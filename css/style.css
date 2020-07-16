@@ -1,15 +1,20 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+}
+body{
+    box-sizing: content-box border-box;
+    overflow-x: hidden;
+    width: 100%;
 }
 .navbar-nav{
-    font-family: Muli;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-padding-right: 80px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding-right: 80px;
+}
+.navbar-brand{
+    padding-left: 20px;
 }
 .skew-bg{
     position: absolute;
@@ -32,11 +37,11 @@ a{
     height: 500px;
 }
 .text{
-    position: relative;
-    top: 85px;
-    margin-left: 460px;
+    position: static;
+    margin-top: 100px;
     font-size: 24px;
     width: 500px;
+    z-index: 1;
 }
 h2{
     line-height: 60px;
@@ -45,7 +50,7 @@ span{
     color: #fff;
 }
 .subscribe{
-    margin-top: 120px;
+    margin-top: 100px;
 }
 #email{
     border: 1px solid #193D5D;
@@ -68,42 +73,39 @@ span{
     margin-top: 100px;
 }
 .device-img{
-    margin-left: 900px;
     z-index: -1;
     position: absolute;
     width: 200px;
     height: 200px;
 }
 .device-img2{
-    top: 1200px;
-    left: 220px;
     position: absolute;
     z-index: -1;
 }
 .device-text{
-    padding-top: 140px;
+    padding-top: 40px;
     position: relative;
 }
 .device h2{
+    margin-top: 100px;
+    position: relative;
     text-align: center;
 }
 .device-text .p1{
     position: relative;
     margin-top: 230px;
     text-align: left;
-    margin-left: 50%;
     width: 581px;
     font-size: 24px;
 }
 .device-text .p2{
     position: relative;
     text-align: left;
-    margin-left: 50%;
     width: 581px;
     font-size: 24px;
 }
 .left-triangle{
-    top: 1300px;
+    top: 1400px;
     position: absolute;
     width: 0;
     height: 0;
@@ -113,7 +115,7 @@ span{
 }
 .device-img3{
     margin-top: 23px;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 .pattern{
     margin-top: 60px;
@@ -127,16 +129,16 @@ span{
 }
 .pattern-text{
     width: 500px;
-    margin-left: 70px;
+    /* margin-left: 130px; */
     margin-top: 170px;
     font-size: 24px;
     justify-content: center;
-    position: relative;
+    position: static;
 }
 .pattern-img2{
     position: relative;
     top: 40px;
-    left: 50px;
+    left: 100px;
 }
 .pattern-img3{
     position: absolute;
@@ -145,7 +147,7 @@ span{
 }
 .skew-bg2{
     position: absolute;
-    top: 3090px;
+    top: 3140px;
     left: 460px;
     width: 0;
     height: 0;
@@ -159,7 +161,7 @@ span{
     margin-top: 90px;
 }
 .hub-text p{
-    padding-left: 70px;
+    /* padding-left: 130px; */
     font-size: 24px;
     width: 600px;
 }
@@ -176,33 +178,362 @@ span{
     text-align: center;
 }
 .sleep-img2{
-    position: absolute;
-    left: 750px;
+    /* position: absolute; */
+    left: 130px;
 }
 .sleep-text{
     margin-top: 250px;
 }
 .sleep-text p{
     width: 750px;
-    padding-left: 250px;
+    padding-left: 130px;
     font-size: 24px;
 }
 .left-triangle2{
-    top: 4600px;
+    top: 4800px;
     position: absolute;
     width: 0;
     height: 0;
-    border-top: 400px solid transparent;
-    border-left: 700px solid #760000;
+    border-top: 300px solid transparent;
+    border-left: 800px solid #760000;
     z-index: -1;
 }
+.screen{
+    padding: 20px 130px;
+}
 .sleep-img3{
-    top: 50px;
+    margin-top: 50px;
     width: 550px;
-    margin-left: 470px;
+    margin-left: 530px;
 }
 .screen h2{
     text-align: center;
     position: relative;
     margin-top: 100px;
+}
+.screen-img{
+    padding: 20px;
+    width: 294px;
+    height: 354px;
+}
+.skew-bg3{
+    position: absolute;
+    top: 5970px;
+    left: 760px;
+    width: 0;
+    height: 0;
+    border-top: 300px solid #760000;
+    border-left: 500px solid transparent;
+}
+.interpret h2{
+    text-align: center;
+    margin-top: 40px;
+}
+.interpret-text{
+    margin-top: 50px;
+}
+.interpret-text p{
+    width: 600px;
+    padding-left: 130px;
+    font-size: 24px;
+}
+.interpret-img{
+    margin-top: 290px;
+}
+.interpret-img2{
+    padding-left: 130px;
+}
+.sub{
+    margin-top: 250px;
+}
+.sub h1{
+    margin-bottom: 30px;
+}
+.mail{
+    padding-left: 110px;
+}
+.slanted-bg{
+    display: grid;
+    margin-top: 200px;
+    height: 600px;
+    width: 100%;
+    background-color: #760000;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    color: #fff;
+    text-align: center;
+}
+.icons{
+    color: #fff;
+    font-size: 35px;
+}
+
+@media (max-width: 450px){
+    body{
+        box-sizing: content-box border-box;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .navbar-nav{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        padding-right: 40px;
+    }
+    .skew-bg{
+        position: absolute;
+        left: 160px;
+        width: 0;
+        height: 0;
+        border-top: 300px solid #760000;
+        border-left: 220px solid transparent;
+        right: 0;
+    }
+    a{
+        color: #fff;
+    }
+    .sleep-img{
+        margin-top: 100px;
+        background: url(../images/undraw_sleep_analysis_o5f9\ 1.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position: absolute;
+        padding-left: 40px;
+        height: 300px;
+    }
+    .text{
+        position: static;
+        margin-top: 100px;
+        font-size: 24px;
+        width: 100%;
+        z-index: 1;
+    }
+    h2{
+        line-height: 60px;
+    }
+    span{
+        color: #fff;
+    }
+    .subscribe{
+        margin-top: 100px;
+    }
+    #email{
+        border: 1px solid #193D5D;
+        border-radius: 60px;
+        background: transparent;
+        padding: 5px 25px;
+        width: 300px;
+    }
+    .sub-btn{
+        margin-top: 40px;
+        width: 300px;
+        text-align: center;
+        background-color: #F9A826;
+        border-radius: 60px;
+        border: 1px solid #F9A826;
+        font-weight: 600;
+        padding: 6px 0;
+    }
+    .device{
+        margin-top: 100px;
+    }
+    .device-img{
+        top: 50px;
+        z-index: -1;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
+    .device-img2{
+        position: absolute;
+        z-index: -1;
+    }
+    .device-text{
+        padding-top: 140px;
+        position: relative;
+    }
+    .device h2{
+        text-align: center;
+    }
+    .device-text .p1{
+        position: relative;
+        margin-top: 230px;
+        text-align: left;
+        width: 581px;
+        font-size: 24px;
+    }
+    .device-text .p2{
+        position: relative;
+        text-align: left;
+        width: 581px;
+        font-size: 24px;
+    }
+    .left-triangle{
+        top: 2200px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 300px solid transparent;
+        border-left: 300px solid #760000;
+        z-index: -1;
+    }
+    .device-img3{
+        margin-top: 23px;
+        margin-left: 100px;
+    }
+    .pattern{
+        margin-top: 60px;
+    }
+    .pattern h2{
+        text-align: center;
+    }
+    .pattern-img{
+        margin-left: 900px;
+        position: absolute;
+    }
+    .pattern-text{
+        width: 500px;
+        /* margin-left: 130px; */
+        margin-top: 170px;
+        font-size: 24px;
+        justify-content: center;
+        position: static;
+    }
+    .pattern-img2{
+        position: relative;
+        top: 40px;
+        left: 100px;
+    }
+    .pattern-img3{
+        position: absolute;
+        left: 700px;
+        top: 2896px;
+    }
+    .skew-bg2{
+        position: absolute;
+        top: 3140px;
+        left: 460px;
+        width: 0;
+        height: 0;
+        border-top: 500px solid #760000;
+        border-left: 800px solid transparent;
+    }
+    .hub h2{
+        text-align: center;
+    }
+    .hub-text{
+        margin-top: 90px;
+    }
+    .hub-text p{
+        /* padding-left: 130px; */
+        font-size: 24px;
+        width: 600px;
+    }
+    .hub-img{
+        width: 400px;
+        height: 400px;
+    }
+    .hub-img2{
+        width: 400px;
+        height: 400px;
+        margin: 10px 200px;
+    }
+    .sleep h2{
+        text-align: center;
+    }
+    .sleep-img2{
+        /* position: absolute; */
+        left: 130px;
+    }
+    .sleep-text{
+        margin-top: 250px;
+    }
+    .sleep-text p{
+        width: 750px;
+        padding-left: 130px;
+        font-size: 24px;
+    }
+    .left-triangle2{
+        top: 4800px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 300px solid transparent;
+        border-left: 800px solid #760000;
+        z-index: -1;
+    }
+    .screen{
+        padding: 20px 130px;
+    }
+    .sleep-img3{
+        margin-top: 50px;
+        width: 550px;
+        margin-left: 530px;
+    }
+    .screen h2{
+        text-align: center;
+        position: relative;
+        margin-top: 100px;
+    }
+    .screen-img{
+        padding: 20px;
+        width: 294px;
+        height: 354px;
+    }
+    .skew-bg3{
+        position: absolute;
+        top: 5970px;
+        left: 760px;
+        width: 0;
+        height: 0;
+        border-top: 300px solid #760000;
+        border-left: 500px solid transparent;
+    }
+    .interpret h2{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .interpret-text{
+        margin-top: 50px;
+    }
+    .interpret-text p{
+        width: 600px;
+        padding-left: 130px;
+        font-size: 24px;
+    }
+    .interpret-img{
+        margin-top: 290px;
+    }
+    .interpret-img2{
+        padding-left: 130px;
+    }
+    .sub{
+        margin-top: 250px;
+    }
+    .sub h1{
+        margin-bottom: 30px;
+    }
+    .mail{
+        padding-left: 110px;
+    }
+    .slanted-bg{
+        display: grid;
+        margin-top: 200px;
+        height: 600px;
+        width: 100%;
+        background-color: #760000;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-text{
+        color: #fff;
+        text-align: center;
+    }
+    .icons{
+        color: #fff;
+        font-size: 35px;
+    }
 }
