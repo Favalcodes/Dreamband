@@ -24,6 +24,9 @@ body{
     border-top: 700px solid #760000;
     border-left: 1000px solid transparent;
 }
+hr{
+    display: none;
+}
 a{
     color: #fff;
 }
@@ -93,7 +96,7 @@ span{
 }
 .device-text .p1{
     position: relative;
-    margin-top: 230px;
+    margin-top: 130px;
     text-align: left;
     width: 581px;
     font-size: 24px;
@@ -114,7 +117,7 @@ span{
     z-index: -1;
 }
 .device-img3{
-    margin-top: 23px;
+    margin-top: 130px;
     margin-left: 100px;
 }
 .pattern{
@@ -124,12 +127,12 @@ span{
     text-align: center;
 }
 .pattern-img{
-    margin-left: 900px;
+    margin-top: 30px;
     position: absolute;
 }
 .pattern-text{
-    width: 500px;
-    /* margin-left: 130px; */
+    width: 600px;
+    padding-left: 130px;
     margin-top: 170px;
     font-size: 24px;
     justify-content: center;
@@ -142,8 +145,7 @@ span{
 }
 .pattern-img3{
     position: absolute;
-    left: 700px;
-    top: 2896px;
+    top: 115px;
 }
 .skew-bg2{
     position: absolute;
@@ -161,7 +163,7 @@ span{
     margin-top: 90px;
 }
 .hub-text p{
-    /* padding-left: 130px; */
+    padding-left: 130px;
     font-size: 24px;
     width: 600px;
 }
@@ -182,10 +184,10 @@ span{
     left: 130px;
 }
 .sleep-text{
-    margin-top: 250px;
+    margin-top: 150px;
 }
 .sleep-text p{
-    width: 750px;
+    width: 600px;
     padding-left: 130px;
     font-size: 24px;
 }
@@ -202,7 +204,7 @@ span{
     padding: 20px 130px;
 }
 .sleep-img3{
-    margin-top: 50px;
+    margin-top: -100px;
     width: 550px;
     margin-left: 530px;
 }
@@ -255,25 +257,31 @@ span{
 .slanted-bg{
     display: grid;
     margin-top: 200px;
-    height: 600px;
+    height: 500px;
     width: 100%;
     background-color: #760000;
-    justify-content: center;
     align-items: center;
 }
 .footer-text{
     color: #fff;
     text-align: center;
+    width: 100%;
 }
 .icons{
     color: #fff;
     font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media (max-width: 450px){
     body{
-        box-sizing: content-box border-box;
+        box-sizing: border-box;
+        width: 100%;
         overflow-x: hidden;
+    }
+    nav{
+        background-color: #760000;
         width: 100%;
     }
     .navbar-nav{
@@ -287,12 +295,18 @@ span{
         left: 160px;
         width: 0;
         height: 0;
-        border-top: 300px solid #760000;
-        border-left: 220px solid transparent;
+        border-top: none;
+        border-left: none;
         right: 0;
     }
+    hr{
+        background-color: #760000;
+        height: 5px;
+        width: 100%;
+        display: block;
+    }
     a{
-        color: #fff;
+        color: #000;
     }
     .sleep-img{
         margin-top: 100px;
@@ -315,7 +329,7 @@ span{
         line-height: 60px;
     }
     span{
-        color: #fff;
+        color: #000;
     }
     .subscribe{
         margin-top: 100px;
@@ -325,11 +339,11 @@ span{
         border-radius: 60px;
         background: transparent;
         padding: 5px 25px;
-        width: 300px;
+        width: 100%;
     }
     .sub-btn{
         margin-top: 40px;
-        width: 300px;
+        width: 100%;
         text-align: center;
         background-color: #F9A826;
         border-radius: 60px;
@@ -362,27 +376,33 @@ span{
         position: relative;
         margin-top: 230px;
         text-align: left;
-        width: 581px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
         font-size: 24px;
     }
     .device-text .p2{
         position: relative;
         text-align: left;
-        width: 581px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
         font-size: 24px;
     }
     .left-triangle{
-        top: 2200px;
+        top: 2420px;
         position: absolute;
         width: 0;
         height: 0;
-        border-top: 300px solid transparent;
-        border-left: 300px solid #760000;
+        border-top: none;
+        border-left: none;
         z-index: -1;
     }
     .device-img3{
         margin-top: 23px;
-        margin-left: 100px;
+        margin-left: 40px;
+        width: 200px;
+        height: 200px;
     }
     .pattern{
         margin-top: 60px;
@@ -391,13 +411,14 @@ span{
         text-align: center;
     }
     .pattern-img{
-        margin-left: 900px;
-        position: absolute;
+        position: relative;
     }
     .pattern-text{
-        width: 500px;
-        /* margin-left: 130px; */
-        margin-top: 170px;
+        width: 100%;
+        text-align: justify;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 100px;
         font-size: 24px;
         justify-content: center;
         position: static;
@@ -405,73 +426,80 @@ span{
     .pattern-img2{
         position: relative;
         top: 40px;
-        left: 100px;
+        left: 30px;
+        width: 100%;
     }
     .pattern-img3{
-        position: absolute;
-        left: 700px;
-        top: 2896px;
+        position: relative;
+        width: 100%;
+        top: 0;
     }
     .skew-bg2{
         position: absolute;
-        top: 3140px;
-        left: 460px;
+        top: 4190px;
+        left: 175px;
         width: 0;
         height: 0;
-        border-top: 500px solid #760000;
-        border-left: 800px solid transparent;
+        border-top: none;
+        border-left: none;
     }
     .hub h2{
+        margin-top: 70px;
         text-align: center;
     }
     .hub-text{
-        margin-top: 90px;
+        margin-top: 80px;
     }
     .hub-text p{
-        /* padding-left: 130px; */
+        padding-left: 40px;
+        padding-right: 40px;
         font-size: 24px;
-        width: 600px;
+        width: 100%;
     }
     .hub-img{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
     .hub-img2{
-        width: 400px;
-        height: 400px;
-        margin: 10px 200px;
+        width: 300px;
+        height: 300px;
+        margin: 10px 40px;
     }
     .sleep h2{
         text-align: center;
     }
     .sleep-img2{
-        /* position: absolute; */
-        left: 130px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .sleep-text{
-        margin-top: 250px;
+        margin-top: 100px;
     }
     .sleep-text p{
-        width: 750px;
-        padding-left: 130px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
         font-size: 24px;
     }
     .left-triangle2{
-        top: 4800px;
+        top: 6700px;
         position: absolute;
         width: 0;
         height: 0;
-        border-top: 300px solid transparent;
-        border-left: 800px solid #760000;
+        border-top: none;
+        border-left: none;
         z-index: -1;
     }
     .screen{
-        padding: 20px 130px;
+        padding: 20px 40px;
     }
     .sleep-img3{
-        margin-top: 50px;
-        width: 550px;
-        margin-left: 530px;
+        margin-top: 30px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0;
     }
     .screen h2{
         text-align: center;
@@ -485,12 +513,12 @@ span{
     }
     .skew-bg3{
         position: absolute;
-        top: 5970px;
-        left: 760px;
+        top: 9230px;
+        left: 275px;
         width: 0;
         height: 0;
-        border-top: 300px solid #760000;
-        border-left: 500px solid transparent;
+        border-top: none;
+        border-left: none;
     }
     .interpret h2{
         text-align: center;
@@ -500,29 +528,38 @@ span{
         margin-top: 50px;
     }
     .interpret-text p{
-        width: 600px;
-        padding-left: 130px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
         font-size: 24px;
     }
     .interpret-img{
-        margin-top: 290px;
+        margin-top: 140px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .interpret-img2{
-        padding-left: 130px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
     }
     .sub{
-        margin-top: 250px;
+        margin-top: 150px;
     }
     .sub h1{
+        margin-top: 50px;
         margin-bottom: 30px;
+        text-align: center;
     }
     .mail{
-        padding-left: 110px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .slanted-bg{
         display: grid;
         margin-top: 200px;
-        height: 600px;
+        height: 500px;
         width: 100%;
         background-color: #760000;
         justify-content: center;
@@ -531,9 +568,935 @@ span{
     .footer-text{
         color: #fff;
         text-align: center;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .icons{
         color: #fff;
-        font-size: 35px;
+        font-size: 25px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 580px){
+    body{
+        box-sizing: border-box;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    nav{
+        background-color: #760000;
+        width: 100%;
+    }
+    .navbar-nav{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        padding-right: 40px;
+    }
+    .skew-bg{
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 20vh;
+        border-top: none;
+        border-left: none;
+        right: 0;
+    }
+    hr{
+        background-color: #760000;
+        height: 10px;
+        width: 100%;
+        display: block;
+    }
+    a{
+        color: #fff;
+    }
+    .sleep-img{
+        margin-top: 100px;
+        background: url(../images/undraw_sleep_analysis_o5f9\ 1.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position: absolute;
+        padding-left: 40px;
+        height: 300px;
+    }
+    .text{
+        position: static;
+        margin-top: 100px;
+        font-size: 24px;
+        width: 100%;
+        z-index: 1;
+    }
+    h2{
+        line-height: 60px;
+    }
+    span{
+        color: #000;
+    }
+    .subscribe{
+        margin-top: 100px;
+    }
+    #email{
+        border: 1px solid #193D5D;
+        border-radius: 60px;
+        background: transparent;
+        padding: 5px 25px;
+        width: 100%;
+    }
+    .sub-btn{
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+        background-color: #F9A826;
+        border-radius: 60px;
+        border: 1px solid #F9A826;
+        font-weight: 600;
+        padding: 6px 0;
+    }
+    .device{
+        margin-top: 100px;
+    }
+    .device-img{
+        top: 50px;
+        z-index: -1;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
+    .device-img2{
+        position: absolute;
+        z-index: -1;
+    }
+    .device-text{
+        padding-top: 140px;
+        position: relative;
+    }
+    .device h2{
+        text-align: center;
+    }
+    .device-text .p1{
+        position: relative;
+        margin-top: 230px;
+        text-align: left;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .device-text .p2{
+        position: relative;
+        text-align: left;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .left-triangle{
+        top: 200%;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+        z-index: -1;
+    }
+    .device-img3{
+        margin-top: 60px;
+        margin-left: 40px;
+        width: 200px;
+        height: 200px;
+    }
+    .pattern{
+        margin-top: 60px;
+    }
+    .pattern h2{
+        text-align: center;
+    }
+    .pattern-img{
+        position: relative;
+    }
+    .pattern-text{
+        width: 100%;
+        text-align: justify;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 100px;
+        font-size: 24px;
+        justify-content: center;
+        position: static;
+    }
+    .pattern-img2{
+        position: relative;
+        top: 40px;
+        left: 30px;
+        width: 100%;
+    }
+    .pattern-img3{
+        position: relative;
+        width: 100%;
+        top: 0;
+    }
+    .skew-bg2{
+        position: absolute;
+        top: 3953px;
+        left: 275px;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+    }
+    .hub h2{
+        margin-top: 70px;
+        text-align: center;
+    }
+    .hub-text{
+        margin-top: 80px;
+    }
+    .hub-text p{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+        width: 100%;
+    }
+    .hub-img{
+        width: 300px;
+        height: 300px;
+    }
+    .hub-img2{
+        width: 300px;
+        height: 300px;
+        margin: 10px 40px;
+    }
+    .sleep h2{
+        text-align: center;
+    }
+    .sleep-img2{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .sleep-text{
+        margin-top: 100px;
+    }
+    .sleep-text p{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .left-triangle2{
+        top: 6410px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+        z-index: -1;
+    }
+    .screen{
+        padding: 20px 70px;
+    }
+    .sleep-img3{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0;
+    }
+    .screen h2{
+        text-align: center;
+        position: relative;
+        margin-top: 100px;
+    }
+    .screen-img{
+        padding: 20px;
+        width: 294px;
+        height: 354px;
+    }
+    .skew-bg3{
+        position: absolute;
+        top: 9230px;
+        left: 275px;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+    }
+    .interpret h2{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .interpret-text{
+        margin-top: 50px;
+    }
+    .interpret-text p{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .interpret-img{
+        margin-top: 140px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .interpret-img2{
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+    }
+    .sub{
+        margin-top: 150px;
+    }
+    .sub h1{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .mail{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .slanted-bg{
+        display: grid;
+        margin-top: 200px;
+        height: 500px;
+        width: 100%;
+        background-color: #760000;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-text{
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .icons{
+        color: #fff;
+        font-size: 25px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (min-width: 581px) and (max-width: 785px){
+    body{
+        box-sizing: border-box;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    nav{
+        background-color: #760000;
+        width: 100%;
+    }
+    .navbar-nav{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        padding-right: 40px;
+    }
+    .skew-bg{
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 20vh;
+        border-top: none;
+        border-left: none;
+        right: 0;
+    }
+    hr{
+        background-color: #760000;
+        height: 10px;
+        width: 100%;
+        display: block;
+    }
+    a{
+        color: #fff;
+    }
+    .sleep-img{
+        margin-top: 100px;
+        background: url(../images/undraw_sleep_analysis_o5f9\ 1.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position: absolute;
+        padding-left: 40px;
+        height: 300px;
+    }
+    .text{
+        position: static;
+        margin-top: 100px;
+        font-size: 24px;
+        width: 100%;
+        z-index: 1;
+    }
+    h2{
+        line-height: 60px;
+    }
+    span{
+        color: #000;
+    }
+    .subscribe{
+        margin-top: 100px;
+    }
+    #email{
+        border: 1px solid #193D5D;
+        border-radius: 60px;
+        background: transparent;
+        padding: 5px 25px;
+        width: 100%;
+    }
+    .sub-btn{
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+        background-color: #F9A826;
+        border-radius: 60px;
+        border: 1px solid #F9A826;
+        font-weight: 600;
+        padding: 6px 0;
+    }
+    .device{
+        margin-top: 100px;
+    }
+    .device-img{
+        top: 50px;
+        z-index: -1;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
+    .device-img2{
+        position: absolute;
+        z-index: -1;
+    }
+    .device-text{
+        padding-top: 140px;
+        position: relative;
+    }
+    .device h2{
+        text-align: center;
+    }
+    .device-text .p1{
+        position: relative;
+        margin-top: 230px;
+        text-align: left;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .device-text .p2{
+        position: relative;
+        text-align: left;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .left-triangle{
+        top: 200%;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+        z-index: -1;
+    }
+    .device-img3{
+        margin-top: 60px;
+        margin-left: 40px;
+        width: 200px;
+        height: 200px;
+    }
+    .pattern{
+        margin-top: 60px;
+    }
+    .pattern h2{
+        text-align: center;
+    }
+    .pattern-img{
+        position: relative;
+    }
+    .pattern-text{
+        width: 100%;
+        text-align: justify;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 100px;
+        font-size: 24px;
+        justify-content: center;
+        position: static;
+    }
+    .pattern-img2{
+        position: relative;
+        top: 40px;
+        left: 30px;
+        width: 100%;
+    }
+    .pattern-img3{
+        position: relative;
+        width: 100%;
+        top: 0;
+    }
+    .skew-bg2{
+        position: absolute;
+        top: 3953px;
+        left: 275px;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+    }
+    .hub h2{
+        margin-top: 70px;
+        text-align: center;
+    }
+    .hub-text{
+        margin-top: 80px;
+    }
+    .hub-text p{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+        width: 100%;
+    }
+    .hub-img{
+        width: 300px;
+        height: 300px;
+    }
+    .hub-img2{
+        width: 300px;
+        height: 300px;
+        margin: 10px 40px;
+    }
+    .sleep h2{
+        text-align: center;
+    }
+    .sleep-img2{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .sleep-text{
+        margin-top: 100px;
+    }
+    .sleep-text p{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .left-triangle2{
+        top: 6410px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+        z-index: -1;
+    }
+    .screen{
+        padding: 20px 70px;
+    }
+    .sleep-img3{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0;
+    }
+    .screen h2{
+        text-align: center;
+        position: relative;
+        margin-top: 100px;
+    }
+    .screen-img{
+        padding: 20px;
+        width: 294px;
+        height: 354px;
+    }
+    .skew-bg3{
+        position: absolute;
+        top: 9230px;
+        left: 275px;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+    }
+    .interpret h2{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .interpret-text{
+        margin-top: 50px;
+    }
+    .interpret-text p{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .interpret-img{
+        margin-top: 140px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .interpret-img2{
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+    }
+    .sub{
+        margin-top: 150px;
+    }
+    .sub h1{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .mail{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .slanted-bg{
+        display: grid;
+        margin-top: 200px;
+        height: 500px;
+        width: 100%;
+        background-color: #760000;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-text{
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .icons{
+        color: #fff;
+        font-size: 25px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 786px) and (max-width: 1020px){
+    body{
+        box-sizing: border-box;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    nav{
+        background-color: #760000;
+        width: 100%;
+    }
+    .navbar-nav{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        padding-right: 40px;
+    }
+    .skew-bg{
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 20vh;
+        border-top: none;
+        border-left: none;
+        right: 0;
+    }
+    hr{
+        background-color: #760000;
+        height: 10px;
+        width: 100%;
+        display: block;
+    }
+    a{
+        color: #fff;
+    }
+    .sleep-img{
+        margin-top: 100px;
+        background: url(../images/undraw_sleep_analysis_o5f9\ 1.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position: absolute;
+        padding-left: 40px;
+        height: 300px;
+    }
+    .text{
+        position: static;
+        margin-top: 100px;
+        font-size: 24px;
+        width: 100%;
+        z-index: 1;
+    }
+    h2{
+        line-height: 60px;
+    }
+    span{
+        color: #000;
+    }
+    .subscribe{
+        margin-top: 100px;
+    }
+    #email{
+        border: 1px solid #193D5D;
+        border-radius: 60px;
+        background: transparent;
+        padding: 5px 25px;
+        width: 100%;
+    }
+    .sub-btn{
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+        background-color: #F9A826;
+        border-radius: 60px;
+        border: 1px solid #F9A826;
+        font-weight: 600;
+        padding: 6px 0;
+    }
+    .device{
+        margin-top: 100px;
+    }
+    .device-img{
+        top: 50px;
+        z-index: -1;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
+    .device-img2{
+        position: absolute;
+        z-index: -1;
+    }
+    .device-text{
+        padding-top: 140px;
+        position: relative;
+    }
+    .device h2{
+        text-align: center;
+    }
+    .device-text .p1{
+        position: relative;
+        margin-top: 230px;
+        text-align: left;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .device-text .p2{
+        position: relative;
+        text-align: left;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .left-triangle{
+        top: 200%;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+        z-index: -1;
+    }
+    .device-img3{
+        margin-top: 60px;
+        margin-left: 40px;
+        width: 300px;
+        height: 300px;
+    }
+    .pattern{
+        margin-top: 60px;
+    }
+    .pattern h2{
+        text-align: center;
+    }
+    .pattern-img{
+        position: relative;
+    }
+    .pattern-text{
+        width: 100%;
+        text-align: justify;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 100px;
+        font-size: 24px;
+        justify-content: center;
+        position: static;
+    }
+    .pattern-img2{
+        position: relative;
+        top: 40px;
+        left: 30px;
+        width: 100%;
+    }
+    .pattern-img3{
+        position: relative;
+        width: 100%;
+        top: 0;
+    }
+    .skew-bg2{
+        position: absolute;
+        top: 3953px;
+        left: 275px;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+    }
+    .hub h2{
+        margin-top: 70px;
+        text-align: center;
+    }
+    .hub-text{
+        margin-top: 80px;
+    }
+    .hub-text p{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+        width: 100%;
+    }
+    .hub-img{
+        width: 300px;
+        height: 300px;
+    }
+    .hub-img2{
+        width: 300px;
+        height: 300px;
+        margin: 10px 40px;
+    }
+    .sleep h2{
+        text-align: center;
+    }
+    .sleep-img2{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .sleep-text{
+        margin-top: 100px;
+    }
+    .sleep-text p{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .left-triangle2{
+        top: 6410px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+        z-index: -1;
+    }
+    .screen{
+        padding: 20px 70px;
+    }
+    .sleep-img3{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0;
+    }
+    .screen h2{
+        text-align: center;
+        position: relative;
+        margin-top: 100px;
+    }
+    .screen-img{
+        padding: 20px;
+        width: 294px;
+        height: 354px;
+    }
+    .skew-bg3{
+        position: absolute;
+        top: 9230px;
+        left: 275px;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-left: none;
+    }
+    .interpret h2{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .interpret-text{
+        margin-top: 50px;
+    }
+    .interpret-text p{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+    }
+    .interpret-img{
+        margin-top: 140px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .interpret-img2{
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+    }
+    .sub{
+        margin-top: 150px;
+    }
+    .sub h1{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .mail{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .slanted-bg{
+        display: grid;
+        margin-top: 200px;
+        height: 500px;
+        width: 100%;
+        background-color: #760000;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .footer-text{
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .icons{
+        color: #fff;
+        font-size: 25px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
