@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <!-- Aos Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Ionicons -->
     <link rel="stylesheet" href="./css/ionicons-2.0.1/css/ionicons.min.css">
 
@@ -28,7 +31,7 @@
         <header>
             <div class="skew-bg"></div>
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#"><img src="./images/Group 3.svg"></a>
+                <a class="navbar-brand" href="#"><img src="./images/Group 3.svg" class="logo"><h1>DreamBand</h1></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,23 +39,23 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link text-white pr-3" href="#">Device <span
+                            <a class="nav-link text-white pr-3" href="#device">Device <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white pr-3" href="#">DreamPattern</a>
+                            <a class="nav-link text-white pr-3" href="#pattern">DreamPattern</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white pr-3" href="#">DreamHub</a>
+                            <a class="nav-link text-white pr-3" href="#hub">DreamHub</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white pr-3" href="#">SleepPattern</a>
+                            <a class="nav-link text-white pr-3" href="#sleep">SleepPattern</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white pr-3" href="#">Dream Interpret</a>
+                            <a class="nav-link text-white pr-3" href="#screen">Screenshots</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white pr-3" href="#">Subscribe</a>
+                            <a class="nav-link text-white pr-3" href="#interpret">Dream Interpret</a>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +68,7 @@
             </div>
             <div class="col-md-6">
                 <div class="text">
-                    <h2>D<span>o You Dream and</span><br> Forget? <span>Let's Help you</span><br> Remember</h2>
+                    <h2>D<span>o You Dream and</span> Forget? <span>Let's Help you</span> Remember</h2>
                     <p>How cool is that? Never be worried about forgeting your dreams.<br> With DreamBand,
                         we
                         help you track your dreams and remember them.<br> You see how well you sleep and
@@ -83,7 +86,7 @@
         </div>
 
         <!-- Device Section -->
-        <section class="device" id="device">
+        <section class="device" id="device" data-aos="fade-up">
             <div class="row">
                 <div class="col-md-3">
                     <img src="./images/undraw_sync4_xlc6 1.svg" alt="" class="device-img2">
@@ -118,7 +121,7 @@
         </section>
 
         <!-- Device Pattern -->
-        <section class="pattern" id="pattern">
+        <section class="pattern" id="pattern" data-aos="fade-up">
             <h2><strong>Dream Pattern</strong></h2>
 
             <div class="row">
@@ -147,8 +150,11 @@
             </div>
         </section>
 
+        <!-- scroll button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><strong><i class="ion-ios-arrow-thin-up"></i></strong></button>
+
         <!-- Dream Hub -->
-        <section class="hub" id="hub">
+        <section class="hub" id="hub" data-aos="fade-up">
             <hr>
             <div class="skew-bg2"></div>
             <h2><strong>Dream Hub</strong></h2>
@@ -168,7 +174,7 @@
         </section>
 
         <!-- Sleep Pattern -->
-        <section class="sleep" id="sleep">
+        <section class="sleep" id="sleep" data-aos="fade-up">
             <h2><strong>Sleep Pattern</strong></h2>
             <div class="row">
                 <div class="col-md-6">
@@ -193,32 +199,32 @@
         <!-- Screenshot -->
         <section class="screen" id="screen">
             <h2><strong>DreamBand Screenshot</strong></h2>
-            <div class="row">
+            <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-md-4">
-                    <img src="./images/Rectangle 16 (3).png" alt="" class="screen-img">
+                    <img src="./images/DreamBand App Dashboard.png" alt="" class="screen-img">
                 </div>
                 <div class="col-md-4">
-                    <img src="./images/Rectangle 16 (3).png" alt="" class="screen-img">
+                    <img src="./images/DreamBand App Dream Interpret.png" alt="" class="screen-img">
                 </div>
                 <div class="col-md-4">
-                    <img src="./images/Rectangle 16 (3).png" alt="" class="screen-img">
+                    <img src="./images/DreamBand App DreamHub page.png" alt="" class="screen-img">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-md-4">
-                    <img src="./images/Rectangle 16 (3).png" alt="" class="screen-img">
+                    <img src="./images/DreamBand App DreamPattern page.png" alt="" class="screen-img">
                 </div>
                 <div class="col-md-4">
-                    <img src="./images/Rectangle 16 (3).png" alt="" class="screen-img">
+                    <img src="./images/DreamBand App sleepPattern page (1) 1.png" alt="" class="screen-img">
                 </div>
                 <div class="col-md-4">
-                    <img src="./images/Rectangle 16 (3).png" alt="" class="screen-img">
+                    <img src="./images/DreamBand App Synch Page.png" alt="" class="screen-img">
                 </div>
             </div>
         </section>
 
         <!-- Dream Interpret -->
-        <section class="interpret" id="interpret">
+        <section class="interpret" id="interpret" data-aos="fade-up">
             <hr>
             <div class="skew-bg3"></div>
             <h2><strong>Dream Interpret</strong></h2>
@@ -291,6 +297,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
