@@ -318,7 +318,7 @@ span{
     }
     .skew-bg{
         position: absolute;
-        left: 160px;
+        right: 0;
         width: 0;
         height: 0;
         border-top: none;
@@ -471,7 +471,7 @@ span{
     .skew-bg2{
         position: absolute;
         top: 4190px;
-        left: 175px;
+        right: 0;
         width: 0;
         height: 0;
         border-top: none;
@@ -550,7 +550,7 @@ span{
     .skew-bg3{
         position: absolute;
         top: 9230px;
-        left: 275px;
+        right: 0;
         width: 0;
         height: 0;
         border-top: none;
